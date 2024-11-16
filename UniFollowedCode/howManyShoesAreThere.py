@@ -39,7 +39,7 @@ leftovers = abs(left_shoes - right_shoes)
 
 # Write out the results
 if leftovers > 0:
-    # Kontrollera om vänsterskor eller högerskor är över
+    # check if its right or left side
     if left_shoes > right_shoes:
         leftover_shoes = "vänsterskor"
         #if only one shoe left
