@@ -44,14 +44,13 @@ if leftovers > 0:
         leftover_shoes = "vänsterskor"
         #if only one shoe left
         if leftovers == 1:
-            leftover_form = "överbliven" #use singluar form
+            leftover_form = "överbliven" #use singular form
         else:
             leftover_form = "överblivna" #use plural form (more than one shoe)
-#if there are more right shoes than left shoes
     elif right_shoes > left_shoes:
         leftover_shoes = "högerskor" #sets the left over type to right shoes
         
-        #chek again if there is one shoes left
+        #check again if there is one shoe left
         if leftovers == 1:
             leftover_form = "överbliven"
         else:
@@ -70,4 +69,5 @@ if leftovers > 0:
     # Print the result
     print(f"Det finns {both_shoes} par och {leftovers} {leftover_form} {shoe_form} ({leftover_shoes}).")
 else:
-    print(f"Det finns {both_shoes} par och inga skor över.")
+    # Case when there are no leftovers
+    print(f"Det finns {both_shoes} par och inga överblivna skor.")
