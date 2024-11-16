@@ -1,6 +1,7 @@
 import bookshelf
 
 def main():
+  myBooks = bookshelf.bookShelf
   while True:
     #display the menu
     print("\n Welcome to our booksehlf")
@@ -8,7 +9,7 @@ def main():
     print("2. Withdraw a book ")
     print("3. Display book list ")
     print("4. Exit")
-    choice = input("Enter your choice: ")
+    choice = int(input("Enter your choice: "))
     
     #takes in choice
     if choice == 1:
