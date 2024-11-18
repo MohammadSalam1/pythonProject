@@ -23,10 +23,13 @@ package_count = 0
 while True:
   #take the package weight off the user and add to package_weight
   package_weight = int(input("Paketets vikt "))
+  package_number = package_count + 1
+
 
   #if statement to check if the weight has exceeded the max_load
-  if current_load_weight + package_weight > max_load:
+  if (current_load_weight + package_weight > max_load) or (current_load_weight + package_weight == max_load):  
     break #this to break the while loop otherwise it'll continue repeating nonstop
+
 
   current_load_weight += package_weight
   package_count += 1
