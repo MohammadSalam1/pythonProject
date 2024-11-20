@@ -26,11 +26,29 @@ def display_books ():
   
 
 #to withdraw books
-def draw_book (title, author="Unknown"):
-  for book in bookShelf: #will go through the list of books
-    if book["title"].lower() == title.lower(): #cheks what book is in the shelf (book list)
-      bookShelf.remove(book) #if the book is in then its removed and printed 
-      print(f"book{title} has been withdrawn")
-      return #stops
-    print(f"book{title} is not found on the shelf") #if book not found then it tells so
+#def draw_book (title, author="Unknown"):
+ # for book in bookShelf: #will go through the list of books
+  #  if book["title"].lower() == title.lower(): #cheks what book is in the shelf (book list)
+   #   bookShelf.remove(book) #if the book is in then its removed and printed 
+    #  print(f"book{title} has been withdrawn")
+     # return #stops
+    #print(f"book{title} is not found on the shelf") #if book not found then it tells so
+    #if draw_book != bookShelf:
+    #  print("this book does not exist, try again")
+     # display_books(title)
 
+# to withdraw books
+def draw_book(title):
+    for book in bookShelf:  # will go through the list of books
+        if book["title"].lower() == title.lower():  # checks if the book is in the shelf
+            bookShelf.remove(book)  # if the book is in, it's removed and a message is printed
+            print(f"The book '{title}' has been withdrawn.")
+            return  # stops after removing the book
+    
+    # If the loop finishes without finding the book
+    print(f"Error: The book '{title}' is not found on the shelf.")
+    if bookShelf:  # If there are books in the shelf
+        print("Available books on the shelf:")
+        display_books()  # Call the existing display_books function to list the books
+    else:
+        print("The bookshelf is currently empty.")

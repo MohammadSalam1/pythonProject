@@ -18,7 +18,7 @@ def main():
       bookshelf.add_book(title, author)
     elif choice == 2:
       title = input("What book do you wish to withdraw: ")
-      bookshelf.draw_book()
+      bookshelf.draw_book(title)
     elif choice == 3:
       bookshelf.display_books()
     elif choice == 4:
