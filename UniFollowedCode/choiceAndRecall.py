@@ -27,13 +27,19 @@ while True:
 
 
   #if statement to check if the weight has exceeded the max_load
-  if (current_load_weight + package_weight > max_load) or (current_load_weight + package_weight == max_load):  
+  if current_load_weight + package_weight > max_load:
+    print(f"Du kan lasta {package_count} paket. Totalvikten är {current_load_weight} kg.")
     break #this to break the while loop otherwise it'll continue repeating nonstop
 
-
   current_load_weight += package_weight
-  package_count += 1
+  package_count += 1 #increases package count by 1
 
-  #print(f"package added. Current total weight: {current_load_weight}") #tells the user how much weight they have added
 
-print(f"Du kan lasta {package_count} paket. Totalvikten är {current_load_weight} kg.")
+#following two if statements are to check if the load weight are max load are matching, or less then it will print
+#accordingly
+  if current_load_weight == max_load:
+      print(f"Du kan lasta {package_count} paket. Totalvikten är {current_load_weight} kg.")
+      break
+
+  if current_load_weight < max_load:
+      print(f"Du kan lasta {package_count} paket. Totalvikten är {current_load_weight} kg.")
