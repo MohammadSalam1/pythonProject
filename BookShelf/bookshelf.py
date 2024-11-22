@@ -26,18 +26,6 @@ def display_books ():
   
 
 #to withdraw books
-#def draw_book (title, author="Unknown"):
- # for book in bookShelf: #will go through the list of books
-  #  if book["title"].lower() == title.lower(): #cheks what book is in the shelf (book list)
-   #   bookShelf.remove(book) #if the book is in then its removed and printed 
-    #  print(f"book{title} has been withdrawn")
-     # return #stops
-    #print(f"book{title} is not found on the shelf") #if book not found then it tells so
-    #if draw_book != bookShelf:
-    #  print("this book does not exist, try again")
-     # display_books(title)
-
-# to withdraw books
 def draw_book(title):
     for book in bookShelf:  # will go through the list of books
         if book["title"].lower() == title.lower():  # checks if the book is in the shelf
