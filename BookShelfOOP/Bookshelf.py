@@ -29,15 +29,15 @@ class Bookshelf:
   
 
 # Create a bookshelf object
-my_shelf = Bookshelf()
+#my_shelf = Bookshelf()
 
 # Add books interactively
-my_shelf.addbooks()
-my_shelf.addbooks()
+#my_shelf.addbooks()
+#my_shelf.addbooks()
 
-my_shelf.displaybooks()
+#my_shelf.displaybooks()
 
 # remove books
-my_shelf.removebooks()
+#my_shelf.removebooks()
 #display books
-my_shelf.displaybooks()
+#my_shelf.displaybooks()
