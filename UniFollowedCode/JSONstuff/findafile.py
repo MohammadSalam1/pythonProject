@@ -6,4 +6,4 @@ with open(filename, encoding="utf-8") as f:
 
 for i, line in enumerate(content):
   if word in line:
-    print(i, line, end="")
+    print(i, line)
