@@ -1,6 +1,6 @@
-import sys
+file_name = input("enter file name: ")
 
-f = open('fruit.txt', mode='r', encoding="utf-8")
-for row in f:
-  print(row, end='')
-f.close()
+with open(file_name) as f:
+  content = f.readlines()
+
+print(content)
