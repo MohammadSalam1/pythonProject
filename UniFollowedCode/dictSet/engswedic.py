@@ -1,14 +1,15 @@
 import json
 
-wordlist = {}
+with open("wordlist.json") as f:
+  wordlist = json.load(f)
 
 while True:
-  swedish = input("write a word in Swedish: ").lower()
+  
+  swedish = input("write a Swedish word: ").lower()
   if swedish == "":
     break
-  english = input("English translation: ").lower()
+  english = input("English translation").lower()
+  wordlist[swedish] = english
 
-  wordlist[swedish] = english #whats between the squars is the key, and whats after "=" is the value in the dictionary
-
-with open("dictionary.json", "w", encoding="utf-8")as f:
-  json.dump(wordlist, f)
+  with open("wordlist.json", "w") as f:
+    json.dumb(wordlist, f)
