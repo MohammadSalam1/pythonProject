@@ -1,6 +1,6 @@
 import json
 
-with open("wordlist.json") as f:
+with open("wordlist.json", "r") as f:
   wordlist = json.load(f)
 
 while True:
