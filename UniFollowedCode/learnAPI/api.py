@@ -6,3 +6,10 @@ hello = content['insult']
 
 print(hello)
 
+import requests
+
+response = requests.get('https://www.purgomalum.com/service/json?text=this is some test input')
+content = response.json()
+just = content['result']
+print(just)
+
