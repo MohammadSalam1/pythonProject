@@ -1,9 +1,9 @@
-def update_stock (stock_dict, sales_dict):
+def update_stock(stock_dict, sales_dict):
   for product, sold_quantity in sales_dict.items():
-      if product in stock_dict:  # Check if the product exists in the stock
-        stock_dict[product] -= sold_quantity  # Decrease stock by sold quantity
-        if stock_dict[product] < 0:  # Ensure stock doesn't go below 0
-           stock_dict[product] = 0
+     if product in stock_dict:
+      stock_dict[product] -= sold_quantity
+      if stock_dict[product] < 0:
+        stock_dict[product] = 0
 
   return stock_dict
 
