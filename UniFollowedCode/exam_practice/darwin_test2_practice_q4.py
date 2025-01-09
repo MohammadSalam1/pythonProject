@@ -1,7 +1,10 @@
 def remove_short_strings(string_list):
+  results = []
+  for i in string_list:
+    if len(i) >= 5 :
+      results.append(i)
   
-
-
+  return results
 
 
 
