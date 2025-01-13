@@ -1,0 +1,12 @@
+def uppercase_vowels(word):
+  results = ""
+  vowels = "aouieyåäö"
+  
+  for letter in word:
+    if letter.lower() in vowels:
+      results += letter.upper()
+    else:
+      results += letter.lower()
+  return results
+
+print(uppercase_vowels("lekstug")) # lEkstUgA
