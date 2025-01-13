@@ -17,5 +17,5 @@ def final_position(directions):
 
 print(final_position("NS")) # Output: (0, 0)
 print(final_position("NESW")) # Output: (0, 0)
-print(final_position("NESNW")) # Output: (1, 1)
+print(final_position("NEESNW")) # Output: (1, 1)
 print(final_position("SSWWNEEE")) # Output: (1, -1)
