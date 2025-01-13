@@ -1,4 +1,12 @@
 def calculate_rental_cost (days):
+  if days <= 1:
+    return 40 * days
+  elif days <= 5:
+    return 35 * days
+  elif days <= 10:
+    return 30 * days
+  elif days > 10:
+    return 25 * days
   
 
 
